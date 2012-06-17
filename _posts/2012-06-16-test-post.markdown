@@ -1,0 +1,8 @@
+---
+layout: post
+title: Test Post
+---
+
+A test post!
+
+A [link](http://google.com)!

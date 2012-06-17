@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %} {{ page.title }} | {% endif %} {{site.title}}</title>
+	<!--[if IE]>
+	<script src="/js/html5.js" />
+	<![endif]-->
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="screen, projection" charset="utf-8" href="/css/screen.css" />
+	<link rel="stylesheet" type="text/css" media="screen, projection" charset="utf-8" href="/css/pygments.css" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml" />
+	<link type="text/plain" rel="author" href="/humans.txt" />
+	{% if site.analytics_id %}
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', '{{site.analytics_id}}']);
+		_gaq.push(['_setDomainName', 'ificate.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	{% endif %}
+</head>
+<body>
+	<div id="wrap" class="container_12">
+		<header class="grid_12 alpha omega">
+			{% if site.title %}
+			<h1><a href="{{site.url}}">{{site.title}}</a></h1>
+			{% endif %}
+		</header>
+		<div class="clear"></div>
+		<section class="grid_8 alpha omega">
+			{{ content }}
+		</section>
+		<div class="clear"></div>
+		<footer>
+			<div class="grid_4 alpha">
+				<p>
+					{% if site.author %}{{site.author}}<br />{% endif %}
+					{% if site.email %}
+					<a href="mailto:{{site.email}}">{{site.email}}</a><br />
+					{% endif %}
+				</p>
+			</div>
+			<div class="grid_4">
+				<p>
+					{% if site.twitter_id %}
+					<a href="http://twitter.com/{{site.twitter_id}}">twitter.com/{{site.twitter_id}}</a><br />
+					{% endif %}
+					{% if site.google_id %}
+					<a href="http://profiles.google.com/{{site.google_id}}">profiles.google.com/{{site.google_id}}</a><br />
+					{% endif %}
+				</p>
+			</div>
+			<div class="grid_4 omega">
+				<a href="{{site.url}}/atom.xml" class="noul">
+					<img src="/img/rss.png" alt="Subscribe to RSS Feed" />
+				</a>
+			</div>
+		</footer>
+		<div class="clear"></div>
+	</div><!-- .container_12 -->
+</body>
+</html>

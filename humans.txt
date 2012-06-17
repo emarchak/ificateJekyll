@@ -1,0 +1,9 @@
+/* TEAM */
+Everett Carney Wilson
+http://ificate.net
++Carney Wilson
+Orlando, FL
+
+/* THANKS */
+mojombo (Tom Preston-Werner) for https://github.com/mojombo/jekyll (Jekyll)
+btbytes (Davis W. Frank) for https://github.com/btbytes/jekyll_960 (Jekyll template.)

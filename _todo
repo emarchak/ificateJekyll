@@ -1,0 +1,27 @@
+Smaller Changes:
+* Set up github repo
+	* Remove current .git references
+* Migrate site to mneme 
+* Set up site on ificate.net
+* Script pushing to ificate.net
+	* Will need ssh keys set up for brigid, mneme
+* Include CC-BY-SA: http://creativecommons.org/choose/results-one?q_1=2&q_1=1&field_commercial=y&field_derivatives=sa&field_jurisdiction=&field_format=&field_worktitle=&field_attribute_to_name=Everett+Carney+Wilson&field_attribute_to_url=&field_sourceurl=&field_morepermissionsurl=&lang=en_US&n_questions=3
+* Add prettyPhoto support: http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/#prettyPhoto
+
+Medium Changes
+* Github hooks to autopublish on commit
+	* github can do a POST on the repo gets a push: https://help.github.com/articles/post-receive-hooks
+	* Run a service that receives POSTs, pulls from github, runs jekyll, and then uploads to ificate.net.
+		* Upload by using git push from mneme?
+* Refocus design more toward http://blog.hypsometry.com/
+* RSS feeds by tag/category
+* Look at AWS/external hosting for a lot of static content
+
+Big Changes
+* Hook into read articles (bookmarklet?)
+	* Cosm?
+	* Reader API?
+* Create RSS feed for "To read articles" (bookmarklet? instapaper?)
+
+Low-priority Changes
+* Commenting
