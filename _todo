@@ -14,6 +14,7 @@ Medium Changes
 	* Run a service that receives POSTs, pulls from github, runs jekyll, and then uploads to ificate.net.
 		* Upload by using git push from mneme?
 		* Upload via rsync?
+	* Use branches for articles yet to be published. Publish to ificate.net only on merge to master. (Use git flow.)
 * Refocus design more toward http://blog.hypsometry.com/
 	* Consider using Gentium Basic for the font.
 	* Look at http://www.google.com/webfonts/ for more.
