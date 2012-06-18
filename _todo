@@ -13,6 +13,7 @@ Medium Changes
 	* github can do a POST on the repo gets a push: https://help.github.com/articles/post-receive-hooks
 	* Run a service that receives POSTs, pulls from github, runs jekyll, and then uploads to ificate.net.
 		* Upload by using git push from mneme?
+		* Upload via rsync?
 * Refocus design more toward http://blog.hypsometry.com/
 	* Consider using Gentium Basic for the font.
 	* Look at http://www.google.com/webfonts/ for more.
