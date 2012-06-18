@@ -1,0 +1,17 @@
+---
+layout: post
+title: Long Term Plan
+---
+
+As of now, there are a few things I'd like to do with this site. I expect to expand on them in the future, but here's a list:
+
+* Set up site on ificate.net.
+* Script pushing to ificate.net from home server.
+* Include CC-BY-SA junk.
+* Consider/add prettyPhoto for photo sharing.
+* Use github push hooks to autopublish to ificate.net.
+* Tweak site design.
+* RSS feeds by tag/category.
+* Consider external hosting for larger content.
+* Provide a stream for all articles I've read. Bookmarklet? Does Google RSS work with this?
+* Hook stream into Cosm?
