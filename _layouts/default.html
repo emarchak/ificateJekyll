@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" media="screen, projection" charset="utf-8" href="/css/screen.css" />
 	<link rel="stylesheet" type="text/css" media="screen, projection" charset="utf-8" href="/css/pygments.css" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inika" />
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml" />
 	<link type="text/plain" rel="author" href="/humans.txt" />
 	{% if site.analytics_id %}
@@ -28,26 +29,34 @@
 </head>
 <body>
 	<div id="wrap" class="container_12">
-		<header class="grid_12 alpha omega">
+		<div class="grid_2 alpha"><p /></div>
+		<header class="grid_8">
 			{% if site.title %}
 			<h1><a href="{{site.url}}">{{site.title}}</a></h1>
 			{% endif %}
 		</header>
+		<div class="grid_2 omega"><p /></div>
 		<div class="clear"></div>
-		<section class="grid_8 alpha omega">
+		<div class="grid_3 alpha"><p /></div>
+		<section class="grid_6">
 			{{ content }}
 		</section>
+		<div class="grid_3 omega"><p /></div>
 		<div class="clear"></div>
 		<footer>
 			<div class="grid_4 alpha">
 				<p>
 					{% if site.author %}{{site.author}}<br />{% endif %}
+				</p>
+			</div>
+			<div class="grid_4">
+				<p>
 					{% if site.email %}
 					<a href="mailto:{{site.email}}">{{site.email}}</a><br />
 					{% endif %}
 				</p>
 			</div>
-			<div class="grid_4">
+			<div class="grid_4 omega">
 				<p>
 					{% if site.twitter_id %}
 					<a href="http://twitter.com/{{site.twitter_id}}">twitter.com/{{site.twitter_id}}</a><br />
@@ -56,11 +65,6 @@
 					<a href="http://profiles.google.com/{{site.google_id}}">profiles.google.com/{{site.google_id}}</a><br />
 					{% endif %}
 				</p>
-			</div>
-			<div class="grid_4 omega">
-				<a href="{{site.url}}/atom.xml" class="noul">
-					<img src="/img/rss.png" alt="Subscribe to RSS Feed" />
-				</a>
 			</div>
 		</footer>
 		<div class="clear"></div>
