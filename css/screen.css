@@ -20,7 +20,7 @@
 body
 {
   color:#333;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Inika', serif;
   font-size:87.5%;   /* 16px * 0.875 = 14px */
   line-height: 137.5%; /* 16px * 1.375  = 22px */
 }
@@ -94,7 +94,7 @@ header, footer
 
 
 header h1{
-  font-size:1.142em;
+  font-size:300%;
 }
 
 header h1 a, header h1 a:visited
