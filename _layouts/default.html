@@ -29,22 +29,18 @@
 </head>
 <body>
 	<div id="wrap" class="container_12">
-		<div class="grid_2 alpha"><p /></div>
-		<header class="grid_8">
+		<header class="grid_8 prefix_2 suffix_2">
 			{% if site.title %}
 			<h1><a href="{{site.url}}">{{site.title}}</a></h1>
 			{% endif %}
 		</header>
-		<div class="grid_2 omega"><p /></div>
 		<div class="clear"></div>
-		<div class="grid_3 alpha"><p /></div>
-		<section class="grid_6">
+		<section class="grid_6 prefix_3 suffix_3">
 			{{ content }}
 		</section>
-		<div class="grid_3 omega"><p /></div>
 		<div class="clear"></div>
 		<footer>
-			<div class="grid_4 alpha">
+			<div class="grid_4">
 				<p>
 					{% if site.author %}{{site.author}}<br />{% endif %}
 				</p>
@@ -56,7 +52,7 @@
 					{% endif %}
 				</p>
 			</div>
-			<div class="grid_4 omega">
+			<div class="grid_4">
 				<p>
 					{% if site.twitter_id %}
 					<a href="http://twitter.com/{{site.twitter_id}}">twitter.com/{{site.twitter_id}}</a><br />
